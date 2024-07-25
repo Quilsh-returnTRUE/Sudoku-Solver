@@ -12,6 +12,11 @@ First, it tries placing numbers (1-9) in each empty "cell"
 It checks if placing anumber at a certain cell violates any rules(row, colum, or subgrid)
 If a number can be placed without violating the rules, it recursively tries to solve the rest of the grid
 
+Remember the rules of sudoku it must follow are:
+* Each row & column must contain the numbers from 1 to 9, without repetitions
+* The digits can only occur once per block(nonet)
+* The sum of every single row, column, and nonet must equal 45
+
 Detailed steps:
 * Find empty cell: locate the next empty cell in the grid
 * Try each number: for the empty cell, try each number from 1-9
